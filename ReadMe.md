@@ -7,10 +7,6 @@ This project simulates the emergence of complex patterns from a simple set of ma
 ## 🚀 Features
 
 *   **Real-Time Simulation:** Smooth grid updating and rendering loop.
-*   **Interactive Grid:** Click or drag to draw and erase cells dynamically.
-*   **Simulation Controls:** Pause, play, step forward single frames, and clear the grid.
-*   **Variable Speed:** Speed up or slow down the generation ticks.
-*   **Procedural Seeding:** Randomly populate the grid with a customizable density.
 
 ## 📐 The Rules of Life
 
@@ -45,17 +41,10 @@ Before building the project, ensure you have the following installed:
     dotnet run
     ```
 
-## 🎮 Controls
-
-*   **`Spacebar`**: Pause / Resume simulation.
-*   **`Left Click`**: Draw alive cells.
-*   **`Right Click`**: Erase cells.
-*   **`C`**: Clear the entire grid.
-*   **`R`**: Randomly seed the grid.
-*   **`Up / Down Arrows`**: Adjust simulation speed (ticks per second).
-
 ## 📦 Project Structure
 
 *   `/Content`: Houses the MonoGame Content Pipeline (`Content.mgcb`) for textures and fonts.
 *   `Game1.cs`: The core MonoGame life cycle logic (Initialize, LoadContent, Update, Draw).
-*   `Grid.cs`: Encapsulates the 2D array matrix logic and rule calculations.
+*   `Sprites.CellLife.cs`: Invidual Cells.
+*   `Logic.LifeRules.cs`: Contains Simulation Rules.
+*   `Game1.cs`: Simulation Main loop.
