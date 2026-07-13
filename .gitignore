@@ -1,0 +1,33 @@
+## Used tool: Visual Studio / C# / MonoGame
+
+# Visual Studio Build Outputs
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+[Log]s/
+
+# MonoGame Specific Pipeline Outputs
+# (Ignores the built .xnb assets but keeps your source images/audio)
+*.mgcb.json
+Content/bin/
+Content/obj/
+
+# Visual Studio User & Cache Files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Rider / JetBrains / VS Code (If anyone on the team uses them)
+.idea/
+.vscode/
+*.sln.iml
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
