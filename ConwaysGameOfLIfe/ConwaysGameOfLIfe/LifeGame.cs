@@ -110,7 +110,7 @@ namespace ConwaysGameOfLife
 
                     while (_timer >= _generationDelay)
                     {
-                        if (_curState.IsKeyDown(Keys.Escape) && _prevState.IsKeyUp(Keys.Escape))
+                        if (Keyboard.GetState().IsKeyDown(Keys.Escape))
                         {
                             _screenManager = Screens.StartScreen;
                         }
