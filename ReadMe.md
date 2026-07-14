@@ -33,7 +33,7 @@ Before building the project, ensure you have the following installed:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com
+    git clone https://github.com/DynamicRecon/ConwaysGameOfLIfe.git
     cd ConwaysGameOfLife
     ```
 2.  **Restore Dependencies:**
