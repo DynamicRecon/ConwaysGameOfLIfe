@@ -29,7 +29,7 @@ Before building the project, ensure you have the following installed:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com
+    git clone https://github.com/DynamicRecon/ConwaysGameOfLIfe.git
     cd ConwaysGameOfLife
     ```
 2.  **Restore Dependencies:**
@@ -41,10 +41,21 @@ Before building the project, ensure you have the following installed:
     dotnet run
     ```
 
-## 📦 Project Structure
+# 📦 Project Structure
 
 *   `/Content`: Houses the MonoGame Content Pipeline (`Content.mgcb`) for textures and fonts.
-*   `Game1.cs`: The core MonoGame life cycle logic (Initialize, LoadContent, Update, Draw).
-*   `Sprites.CellLife.cs`: Invidual Cells.
-*   `Logic.LifeRules.cs`: Contains Simulation Rules.
-*   `Game1.cs`: Simulation Main loop.
+*   `LifeGame.cs`: The core MonoGame life cycle logic (Initialize, LoadContent, Update, Draw).
+*   `CellLifeMatrix.cs`: Encapsulates the 2D array matrix logic and rule calculations.
+*   `DebugOverlay.cs` : Displays text prompt to screen.
+==========================
+## 🎮 Controls
+
+*   **`Enter`**: start simulation.
+*   **`Escape`**: stop simulation.
+*   **`Left Key`**: Add Columns.
+*   **`Right Key`**: Remove Columns.
+*   **`Up Key`**: Add Rows.
+*   **`W Key`**: Add Start Density.
+*   **`S Key`**: Remove Start Density.
+
+#

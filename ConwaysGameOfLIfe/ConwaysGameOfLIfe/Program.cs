@@ -1,3 +1,3 @@
 ﻿
-using var game = new ConwaysGameOfLIfe.Game1();
+using var game = new ConwaysGameOfLife.LifeGame();
 game.Run();
