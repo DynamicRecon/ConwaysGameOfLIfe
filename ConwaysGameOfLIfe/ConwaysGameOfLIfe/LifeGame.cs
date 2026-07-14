@@ -116,6 +116,7 @@ namespace ConwaysGameOfLife
                         }
                         _matrix.Update();
                         _generationCount++;
+                        _debug.Update(gameTime);
 
                         _timer -= _generationDelay;
 
@@ -158,7 +159,10 @@ namespace ConwaysGameOfLife
                         }
                     }
                     string prompt = "[press Escape to end simulation]\n" +
-                        $"Generation Count: {_generationCount}\n";
+                        $"Generation Count: {_generationCount}\n" +
+                        $"Frames per second: {_debug.FPS:F1}\n" +
+                        $"Frame Count: {_debug.FrameCount}\n";
+
                     _debug.Draw(_spriteBatch, Vector2.Zero, prompt);
                     break;
             
