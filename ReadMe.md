@@ -47,15 +47,17 @@ Before building the project, ensure you have the following installed:
 
 ## 🎮 Controls
 
-*   **`Spacebar`**: Pause / Resume simulation.
-*   **`Left Click`**: Draw alive cells.
-*   **`Right Click`**: Erase cells.
-*   **`C`**: Clear the entire grid.
-*   **`R`**: Randomly seed the grid.
-*   **`Up / Down Arrows`**: Adjust simulation speed (ticks per second).
+*   **`Enter`**: start simulation.
+*   **`Escape`**: stop simulation.
+*   **`Left Key`**: Add Columns.
+*   **`Right Key`**: Remove Columns.
+*   **`Up Key`**: Add Rows.
+*   **`W Key`**: Add Start Density.
+*   **`S Key`**: Remove Start Density.
 
 ## 📦 Project Structure
 
 *   `/Content`: Houses the MonoGame Content Pipeline (`Content.mgcb`) for textures and fonts.
-*   `Game1.cs`: The core MonoGame life cycle logic (Initialize, LoadContent, Update, Draw).
-*   `Grid.cs`: Encapsulates the 2D array matrix logic and rule calculations.
+*   `LifeGame.cs`: The core MonoGame life cycle logic (Initialize, LoadContent, Update, Draw).
+*   `CellLifeMatrix.cs`: Encapsulates the 2D array matrix logic and rule calculations.
+*   `DebugOverlay.cs` : Displays text prompt to screen.
